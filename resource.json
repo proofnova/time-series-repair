@@ -52,7 +52,7 @@
       "url": "https://duckdb.org/docs/stable/sql/constraints",
       "capability": "SQL constraints and tabular queries; documentation redirected in this session",
       "burden": "Exact feature details remain unconfirmed here; use SQL tooling rather than assuming an absent feature",
-      "evidence_status": "primary page read; exact feature parity not fully executed"
+      "evidence_status": "Access limited: feature details unverified"
     },
     {
       "name": "Manual or composed workflow",
@@ -68,18 +68,22 @@
       "Korean"
     ],
     "queries": [
-      "Time-series repair",
-      "time series repair",
-      "시간대·중복·누락·순서가 뒤섞인 계측 자료를 명시한 시간 격자로 정리한다.",
-      "pandas",
-      "duckdb"
+      "time series resampling missing bins out of order pandas 시계열 결측"
     ],
     "scope": "Primary documentation and repository descriptions were read on the public web. Competitor code, plugins and packaged execution were not exhaustively tested. This is a bounded prior-art review, not a worldwide novelty search.",
     "limitations": [
       "Search results and documentation do not establish universal absence.",
       "Competitor configuration/plugin parity is not exhausted.",
       "No independent end-user interview or deployment evidence."
-    ]
+    ],
+    "proposed_queries": [
+      "Time-series repair",
+      "time series repair",
+      "시간대·중복·누락·순서가 뒤섞인 계측 자료를 명시한 시간 격자로 정리한다.",
+      "pandas",
+      "duckdb"
+    ],
+    "query_scope": "One actual bilingual search per resource, grouped in shared cached batches; additional suggested terms are explicitly proposed, not executed."
   },
   "checked_at": "2026-10-24",
   "distinctive_capability": "Offset-aware timestamps, weighted buckets and explicit missing intervals. An offline executable can be called by a small model and checked against an explicit task contract.",
@@ -105,7 +109,8 @@
   "validation_results": {
     "worked_cases": 1,
     "evaluation_cases": 1,
-    "root_required_field_rejection": true
+    "root_required_field_rejection": true,
+    "fixture_role": "Development regression fixtures; not an untouched final model evaluation set."
   },
   "external_impact_evidence": [],
   "decision": {
